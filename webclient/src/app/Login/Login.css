@@ -1,0 +1,177 @@
+/* General container styling */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* For smaller screens */
+    background-color: #f3f4f6; /* Light gray */
+  }
+  
+  /* Login box styling */
+  .login-box {
+    width: 100%;
+    max-width: 400px; /* Limit width */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Smooth transitions */
+  }
+  
+  .login-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: green;
+  }
+  
+  .login-error {
+    color: #ef4444; /* Red */
+    font-size: 14px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  /* Form styling */
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db; /* Light gray */
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #3b82f6; /* Blue */
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+  }
+  
+  /* Button styling */
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3b82f6; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #2563eb; /* Darker blue */
+  }
+  
+  .forgot-password-link {
+    display: block;
+    margin-top: 16px;
+    text-align: center;
+    font-size: 14px;
+    color: #3b82f6; /* Blue */
+    text-decoration: none;
+  }
+  
+  .forgot-password-link:hover {
+    text-decoration: underline;
+  }
+
+  .continue-with-google {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the image and text */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #555;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .continue-with-google:hover {
+    background-color: #f7f7f7;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .google-logo {
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-box {
+      max-width: 90%; /* Increase width on smaller screens */
+      padding: 16px;
+    }
+  
+    .login-title {
+      font-size: 20px; /* Slightly smaller font size */
+    }
+  
+    .form-input {
+      font-size: 13px;
+    }
+  
+    .login-button {
+      font-size: 14px; /* Slightly smaller button */
+    }
+  
+    .forgot-password-link {
+      font-size: 13px; /* Smaller text for links */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login-box {
+      padding: 12px;
+    }
+  
+    .login-title {
+      font-size: 18px;
+    }
+  
+    .form-input {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .login-button {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    .forgot-password-link {
+      font-size: 12px;
+    }
+    .continue-with-google {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+      .google-logo {
+        width: 18px;
+        height: 18px;
+      }
+  }
+  
